@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+
+	int a, r = 1;
+
+	scanf("%d", &a);
+
+	while (a>1) {
+		r *= a--;
+	}
+
+	printf("%d", r);
+
+	return 0;
+}

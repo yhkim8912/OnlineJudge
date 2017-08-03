@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+#include <vector>
+
+using namespace std;
+
+int main() {
+	
+	int N, K;
+	cin >> N >> K;
+
+	vector<int> A;
+	A.reserve(sizeof(int) * N);
+	A.assign(N, 0);
+
+	for (int iter = 0; iter < N; iter++) {
+		scanf("%d", &A[iter]);
+	}
+	sort(A.begin(), A.end());
+	cout << A[K - 1];
+
+	return 0;
+}
